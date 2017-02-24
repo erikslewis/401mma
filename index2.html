@@ -1,16 +1,60 @@
 <html class="no-js" lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <head>
   	<meta name="viewport" content="width=470, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
-  	<title>Demo: Responsive YouTube Player with Scrolling Thumbnail Playlist</title>
-  	<link rel="stylesheet" href="css/font-awesome.min.css" />
+  	<title>Mike Connors Videos </title>
+    <body>
+
+    <div class="icon-bar">
+      <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+      <a><i class="fa fa-file-movie-o" style="font-size:48px;color:White">Media</i></a>
+      <a href="#"><i class="fa fa-search"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
 
   	<style type="text/css">
+    body {margin:0}
+
+.icon-bar {
+    width: 190px;
+    text-align: center;
+    background-color: #555;
+    position: fixed;
+    margin-left: -10px;
+
+}
+
+.icon-bar a {
+    padding: 16px;
+    display: block;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+     h2{
+       text-align: center;
+     }
 
   		body {
   			margin: 30px;
   			padding: 0;
-  			background: #ddd;
+
   			font-family: Arial, Helvetica, sans-serif;
+        background-image:url("/Users/Erik/401mma/img/181557_190652837636068_7282832_n.jpg");
+        background-size: cover;
   		}
 
   		.title {
@@ -236,16 +280,16 @@
 
                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/1uq_FS63J6U'">
                  <div class="thumb"><img src="img/12676_393640790705246_2002250874_n.jpg"></div>
-                 <div class="desc">Pre Fight for Dare </div>
+                 <div class="desc"> Fight Entrance for Dare </div>
                </div>
 
-               <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.facebook.com/mike.connors.3538/videos/933363423407366/?l=8542235740489286383'">
-                 <div class="thumb"><img src="img/12676_393640790705246_2002250874_n.jpg"></div>
-                 <div class="desc">Pre Fight for Dare </div>
+               <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/u17Aw8LBokk'">
+                 <div class="thumb"><img src="img/392424_292134160863632_1260989541_n.jpg"></div>
+                 <div class="desc">Interview In London </div>
                </div>
 
-               <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/1uq_FS63J6U'">
-                 <div class="thumb"><img src="img/12676_393640790705246_2002250874_n.jpg"></div>
+               <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/BO9IGbCi6_Q'">
+                 <div class="thumb"><img src="img/541319_393640897371902_813345075_n.jpg"></div>
                  <div class="desc">Pre Fight for Dare </div>
                </div>
 
@@ -260,12 +304,7 @@
 
   	</div>
 
-  	<div class="caption"><a href="http://www.woosterwebdesign.com/responsive-youtube-player-with-playlist/">Related Blog Post</a></div>
 
-  	<div class="caption">
-  		<strong><a href="http://woosterwebdesign.com/mylist-video-player">Check out the MyList Video Player.</a></strong>
-		<p>A fully responsive HTML5 video player featuring a scrolling thumbnail playlist. Uses latest YouTube API (V3) and dynamically loads YouTube playlist.</p>
-  	</div>
 
   	<!-- JS FOR SCROLLING THE ROW OF THUMBNAILS -->
   	<script type="text/javascript">

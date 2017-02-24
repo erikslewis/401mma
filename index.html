@@ -2,25 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
-  <body>
+
 
 <header>
-  <img class="banner" src="img/Screen Shot 2017-02-18 at 12.20.21 AM.png">
+  <img class="banner" src="img/Screen Shot 2017-02-23 at 11.35.12 AM.png">
 </header>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Bio</a>
-  <a href="#">Media/Fights</a>
-  <a href="#">Records/Awards</a>
-  <a href="#">Contact/Booking</a>
 
-</div>
+<body>
 
-<span style="font-size:30px;cursor:pointer;text-align:center;" onclick="openNav()">&#9776; open</span>
+  <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a href="index2.html"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
+    <a href="index2.html"><i class="fa fa-globe"></i></a>
+    <a href="index2.html"><i class="fa fa-envelope"></i></a>
+    <a href="index2.html"><i class="fa fa-id-card-o" style="font-size:48px;color:red"></i></a>
+
+  </div>
+
+
+
 
 <div class="w3-content w3-section" style="max-width:500px">
 <img class="mySlides " src="img/558039_374193195948697_1405165768_n.jpg" style="width:100%">
@@ -54,62 +58,41 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 3500);
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
 </script>
 
 <style>
 body{
   background-color: silver;
+  background-image: url('img/12512602_907884125955296_8940348584877434309_n.jpg');
+  background-attachment: fixed;
+  background-repeat:repeat-x;
+  background-size: contain;
 }
-span{
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  display: block;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+body {margin:0}
+
+.icon-bar {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    overflow: auto;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
+.icon-bar a {
+    width: 20%;
+    padding: 12px 0;
+    float: left;
+    transition: all 0.3s ease;
+    color: red;
     font-size: 36px;
-    margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.icon-bar a:hover {
+background-color: black;
+}
+
+.active {
+background-color: transparent !important;
 }
 img.mySlides {display:none;
 text-align: center;
@@ -121,12 +104,14 @@ display: block;
 header{
 background-color: black;
 background-position: center;
+
 }
 img.banner{
 text-align: center;
 margin: 0 auto;
 position: relative;
 display: block;
+height: 100px;
 }
 div.w3-content.w3-section{
   text-align: center;
