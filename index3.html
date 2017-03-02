@@ -7,14 +7,19 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
-  <header> <img class="banner" src="img/Screen Shot 2017-02-18 at 12.20.21 AM.png" alt=""> </header>
+  <header>
+
+    <img class="flag" src="img/animated-greece-flag-2.gif" alt=""><img class="banner" src="img/Screen Shot 2017-02-23 at 11.35.12 AM.png"><img class="flag" src="img/animated-ireland-flag-2.gif">
+
+
+  </header>
   <body>
 
       <div class="icon-bar">
         <a class="active" href="index.html"><i class="fa fa-home"></i></a>
         <a href="index2.html"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
         <a href="index3.html"><i class="fa fa-globe"></i></a>
-        <a href="index4.html"><i class="fa fa-envelope"></i></a>
+        <a href="index4.html"><i class="fa fa-camera"></i></a>
         <a href="index2.html"><i class="fa fa-id-card-o" style="font-size:48px;color:red"></i></a>
 
       </div>
@@ -93,9 +98,11 @@ display: block;
 }
 
 header{
-background-color: black;
-background-position: center;
-
+  background-color: black;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
 }
 img.banner{
 text-align: center;
@@ -103,6 +110,14 @@ margin: 0 auto;
 position: relative;
 display: block;
 height: 100px;
+}
+img.flag{
+  height:50px;
+  width:70px;
+  position: relative;
+  display: block;
+  padding-top: 10px;
+
 }
 div.w3-content.w3-section{
   text-align: center;
