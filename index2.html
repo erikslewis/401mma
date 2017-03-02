@@ -213,19 +213,23 @@
         transition: all 0.3s ease;
         color: red;
         font-size: 36px;
+        background-color: black;
+        height: 60px;
     }
 
     .icon-bar a:hover {
-      background-color: red ;
+      background-color: red;
       animation: pulse .7s infinite;
-      -webkit-text-stroke: 2px black;
+      -webkit-text-stroke: 2px yellow;
       color: red;
     }
 
     .active {
-    background-color: transparent !important;
-    animation: pulse 5s infinite;
+    background-color: red !important;
+    animation: pulse 2s infinite;
     -webkit-text-stroke: 2px yellow;
+
+
     }
     img.mySlides {display:none;
     text-align: center;
@@ -252,6 +256,23 @@
       position: relative;
       display: block;
     }
+    @keyframes pulse {
+      0% {
+        text-shadow: 4px 4px 3px rgba(255, 255, 255, .3);
+        background-color: black;
+      }
+      25% {
+        text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+        background-color: black;
+      }
+      50% {
+        text-shadow: 4px 4px 3px rgba(55, 55, 55, .3);
+        background-color: black;
+      }
+      75% {
+        text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+        background-color: black;
+      }
     </style>
 
 
