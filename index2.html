@@ -216,11 +216,16 @@
     }
 
     .icon-bar a:hover {
-    background-color: black;
+      background-color: red ;
+      animation: pulse .7s infinite;
+      -webkit-text-stroke: 2px black;
+      color: red;
     }
 
     .active {
     background-color: transparent !important;
+    animation: pulse 5s infinite;
+    -webkit-text-stroke: 2px yellow;
     }
     img.mySlides {display:none;
     text-align: center;

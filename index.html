@@ -18,7 +18,7 @@
     <a class="active" href="index.html"><i class="fa fa-home"></i></a>
     <a href="index2.html"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
     <a href="index3.html"><i class="fa fa-globe"></i></a>
-    <a href="index2.html"><i class="fa fa-envelope"></i></a>
+    <a href="index4.html"><i class="fa fa-envelope"></i></a>
     <a href="index2.html"><i class="fa fa-id-card-o" style="font-size:48px;color:red"></i></a>
 
   </div>
@@ -88,11 +88,16 @@ body {margin:0}
 }
 
 .icon-bar a:hover {
-background-color: black;
+  background-color: red ;
+  animation: pulse .7s infinite;
+  -webkit-text-stroke: 2px black;
+  color: red;
 }
 
 .active {
 background-color: transparent !important;
+animation: pulse 5s infinite;
+-webkit-text-stroke: 2px yellow;
 }
 img.mySlides {display:none;
 text-align: center;
@@ -119,4 +124,21 @@ div.w3-content.w3-section{
   position: relative;
   display: block;
 }
+@keyframes pulse {
+  0% {
+    text-shadow: 4px 4px 3px rgba(255, 255, 255, .3);
+    background-color: black;
+  }
+  25% {
+    text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+    background-color: black;
+  }
+  50% {
+    text-shadow: 4px 4px 3px rgba(55, 55, 55, .3);
+    background-color: black;
+  }
+  75% {
+    text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
+    background-color: black;
+  }
 </style>
